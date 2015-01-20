@@ -1,18 +1,18 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## This function below will allow to define a matrix and output functions to store its inverse
+## This function below will allow to define a matrix and output functions to allow its inverse to be cached within the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
 
-  Inv <- NULL
+  Ix <- NULL
   set <- function(y) {
     x <<- y
-    Inv <<- NULL
+    Ix <<- NULL
   }
   get <- function() x
-  setInv <- function(Inv) Inv <<- solve(x)
-  getInv <- function() Inv
+  setInv <- function(Inv) Ix <<- Inv 
+  getInv <- function() Ix
   list(set = set, get = get,
        setInv = setInv,
        getInv = getInv)
