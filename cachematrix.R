@@ -1,8 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## This function below will allow to define a matrix and output functions to allow its inverse to be cached within the matrix
-
+## A matrix is input into the function below matrix which outputs function that allow its inverse to be cached within 
+## the a 'special' matrix
+## Please note that the makeVector function from the example was modified accordingly to impliment the above procedure
+  
 makeCacheMatrix <- function(x = matrix()) {
 
   Ix <- NULL
@@ -19,9 +21,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
   
 }
+#hello
 
-
-## Write a short comment describing this function
+## The function below will check if the input matrix has its inverse cached and returns it if TRUE
+## Otherwise, it will solve for the inverse of the matrix, cache it into the matrix with setInv() and output the result
+## Please note that the cachemean function from the example was modified accordingly to impliment the above procedure
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
