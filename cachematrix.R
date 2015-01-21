@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
   
 }
-#hello
+
 
 ## The function below will check if the input matrix has its inverse cached and returns it if TRUE
 ## Otherwise, it will solve for the inverse of the matrix, cache it into the matrix with setInv() and output the result
