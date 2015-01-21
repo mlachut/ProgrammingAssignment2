@@ -32,7 +32,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   
-  if (nrow(x$get()) == ncol(x$get())) {  ##check to see if the input matrix is squares
+  if (nrow(x$get()) == ncol(x$get())) {  ##check to see if the input matrix is square
     Ix <- x$getInv()
     if(!is.null(Ix)) {
       message("getting cached inverse of matrix")
